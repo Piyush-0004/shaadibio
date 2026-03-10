@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { calculateAge } from "../utils/AgeCalculator"
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 function BiodataForm() {
 
@@ -306,7 +307,7 @@ onChange={handlePhoto}
 {/* PREVIEW */}
 
 
-<div style={{ width:"550px",}}className="bg-pink-50 shadow-2xl rounded-xl p-6  h-fit">
+<div className="w-full md:max-w-md bg-pink-50 shadow-2xl rounded-xl p-6 h-fit">
 
 <h2 className="text-xl font-bold mb-4 text-center">
 Biodata Preview
@@ -364,8 +365,9 @@ className="w-32 h-32 object-cover rounded mb-4"
 </div>
 
 </div>
-
+<Footer/>
 </>
+
 )
 }
 
